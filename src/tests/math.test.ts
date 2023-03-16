@@ -1,4 +1,4 @@
-import { plus, minus, multiply, divide } from './math';
+import { plus, minus, multiply, divide } from '../helpers/math';
 
 describe('testing math functions', () => {
 

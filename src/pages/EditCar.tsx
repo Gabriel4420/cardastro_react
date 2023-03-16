@@ -1,11 +1,11 @@
 import { useContext, useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
-import bigCarImage from "../../assets/big_car.png";
-import bigHondaImage from "../../assets/big_honda.png";
-import bigMbImage from "../../assets/big_mb.png";
-import bigWwImage from "../../assets/big_ww.png";
-import bigToyotaImage from "../../assets/big_toyota.png";
+import bigCarImage from "../assets/big_car.png";
+import bigHondaImage from "../assets/big_honda.png";
+import bigMbImage from "../assets/big_mb.png";
+import bigWwImage from "../assets/big_ww.png";
+import bigToyotaImage from "../assets/big_toyota.png";
 
 import { Context } from "../contexts/Context";
 
