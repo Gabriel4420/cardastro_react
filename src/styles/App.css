@@ -1,0 +1,162 @@
+* {
+  font-family: Rubik, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+}
+
+.button {
+  display: block;
+  border: 0;
+  background-color: #6A7D8B;
+  color: #FFF;
+  font-size: 16px;
+  padding: 10px 40px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+.button.full {
+  width: 100%;
+}
+.button:hover {
+  opacity: .9;
+}
+.button:disabled {
+  opacity: .3;
+}
+
+/* CarList */
+
+.tableHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0;
+}
+.tableHeaderLeft {
+  font-weight: bold;
+  font-size: 16px;
+}
+.tableHeaderRight {
+  opacity: .7;
+}
+
+.carItem {
+  display: flex;
+}
+.column {
+  flex: 1;
+  height: 80px;
+  border-bottom: 1px solid #999;
+  display: flex;
+  align-items: center;
+}
+
+.brand {
+  width: 50px;
+  flex: none;
+  padding: 0 10px;
+}
+.brand img {
+  width: 100%;
+}
+.model {
+  flex: 1.5;
+  font-weight: bold;
+}
+.year, .km {
+  color: #999;
+}
+.price {
+  font-weight: bold;
+}
+.options {
+  flex: none;
+  width: 50px;
+
+}
+
+.pointWindow {
+  position: absolute;
+  width: 70px;
+  margin-left: -70px;
+  background-color: #20313F;
+}
+.pointWindowBtn {
+  padding: 5px 10px;
+  color: #FFF;
+  cursor: pointer;
+}
+.pointWindowBtn:hover {
+  background-color: #6A7D8B;
+}
+
+/* EditCar */
+
+.backButton {
+  font-size: 13px;
+  text-decoration: none;
+  color: #999;
+  display: inline-block;
+  margin-top: 40px;
+}
+
+h2 {
+  font-size: 23px;
+}
+
+.pageSplit {
+  display: flex;
+}
+.pageLeft {
+  flex: 1;
+  margin-right: 20px;
+}
+.pageRight {
+  width: 400px;
+  margin-left: 20px;
+}
+.pageRight img {
+  width: 100%;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.brandField {
+  grid-area: 1 / 1 / 1 / 3;
+}
+.modelField {
+  grid-area: 2 / 1 / 2 / 3;
+}
+.yearField {
+  grid-area: 3 / 1;
+}
+.kmField {
+  grid-area: 3 / 2;
+}
+.priceField {
+  grid-area: 4 / 1 / 4 / 3;
+}
+
+.form select,
+.form input {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  height: 40px;
+  border-bottom: 1px solid #999;
+  outline: none;
+  font-size: 15px;
+}
+

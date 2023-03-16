@@ -2,7 +2,7 @@ import { plus, minus, multiply, divide } from './math';
 
 describe('testing math functions', () => {
 
-    it('should add correctly', () => {
+    it('should sum correctly', () => {
         let result = plus(5, 8);
         expect(result).toBe(13);
     });

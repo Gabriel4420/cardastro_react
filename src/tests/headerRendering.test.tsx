@@ -1,4 +1,4 @@
-import { Header } from './index';
+import { Header } from '../components/Header/index';
 import { render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 

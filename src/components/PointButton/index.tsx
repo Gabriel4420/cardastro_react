@@ -1,10 +1,9 @@
+import { PointButtonProps } from '../../types/Props';
 import './styles.css';
 
-type Props = {
-    onClick?: () => void;
-}
 
-export const PointButton = ({ onClick }: Props) => {
+
+export const PointButton = ({ onClick }: PointButtonProps) => {
     return (
         <div className="pointButton" onClick={onClick}>
             <div></div>
